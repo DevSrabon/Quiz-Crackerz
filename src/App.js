@@ -17,6 +17,9 @@ function App() {
 					element: <Topics></Topics>,
 				},
 				{
+					path: '/'
+				},
+				{
 					path: '/statistics',
 					element: <Statistics></Statistics>,
 				},
@@ -26,6 +29,7 @@ function App() {
 				},
 			],
 		},
+    
 	]);
 	return (
 		<div className="App">
