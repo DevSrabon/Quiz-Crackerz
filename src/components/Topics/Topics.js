@@ -12,7 +12,9 @@ const Topics = () => {
 			<HeaderImg></HeaderImg>
 				<div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 container">
 					{topicsData.map((topic) => (
-						<Carts key={topic.id} topic={topic}></Carts>
+						<Carts
+							key={topic.id}
+							topic={topic}></Carts>
 					))}
 				</div>
 			</div>
