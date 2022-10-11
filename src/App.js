@@ -11,11 +11,11 @@ function App() {
 			path: '/',
 			element: <Main></Main>,
 			children: [
-        {
-          path: '/',
-          loader: () => fetch(''),
-          element: <Topics></Topics>
-        },
+				{
+					path: '/',
+					loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+					element: <Topics></Topics>,
+				},
 				{
 					path: '/statistics',
 					element: <Statistics></Statistics>,
