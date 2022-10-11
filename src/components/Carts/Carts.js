@@ -4,7 +4,7 @@ const Carts = ({ topic }) => {
 	const {id, name, logo } = topic;
 
 	return (
-		<div className="col">
+		<div className="col"> 
 			<div className="card h-100 w-80 ">
 				<img className="bg-secondary" src={logo} alt="" />
 				<div className="card-body d-flex align-items-center justify-content-between">
