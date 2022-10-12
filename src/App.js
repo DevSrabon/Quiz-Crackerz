@@ -37,7 +37,7 @@ function App() {
 				},
 			],
 		},
-		{ path: '*', element: <h2 className='text-danger'>This router are not found.</h2> },
+		{ path: '*', element: <h2 className='text-danger my-5'>404 not found.</h2> },
 	]);
 	return (
 		<div className="App">
