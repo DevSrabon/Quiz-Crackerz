@@ -7,7 +7,7 @@ const Questions = () => {
     const name = loaderQuestionsData.data.name;
     return (
         <div>
-            <h2>{name}</h2>
+            <h2 className='text-info mt-5'>{name}</h2>
             {
                 questions.map(data => <Question
                     key={data.id}
