@@ -18,15 +18,6 @@ const Topics = () => {
 							key={topic.id}
 							topic={topic}></Carts>
 					))}
-				
-				{
-					topicsData.map((topic) => (
-						<Statistics
-						key={topic.id}
-							topic={topic}
-						></Statistics>
-					))
-				}
 				</div>
 			</div>
 		);

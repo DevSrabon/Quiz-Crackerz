@@ -1,9 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const Question = ({ data }) => {
-	const { question, options, correctAnswer } = data;
-	// console.log(typeof correctAnswer, )
+const Question = ({ data, all }) => {
+	const { question, options, correctAnswer} = data;
+	
 	const handleClick = (id) =>{
 		if (correctAnswer === id) {
 			toast.success("Answer is correct!", { autoClose: 2000 })
@@ -12,10 +14,15 @@ const Question = ({ data }) => {
 			toast.error('Wrong Answer!', { autoClose: 2000 });
 		}
 	}
+
 	
 	return (
 		<div className="container text-center bg-light shadow-lg my-5">
-			<h2>{question}</h2>
+			<h2>
+				{question} 
+				<span onClick={() =>{toast(`${correctAnswer}`)}}> <FontAwesomeIcon icon={faEye} /></span>
+				
+			</h2>
 			<div className="d-flex  gap-5">
 				<div className="col gap-4">
 					<div className="p-3 bg-info rounded my-4">
