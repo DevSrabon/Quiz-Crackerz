@@ -18,12 +18,20 @@ const Question = ({ data, all }) => {
 	
 	return (
 		<div className="container text-center bg-light shadow-lg my-5">
-			<h2>
-				{question} 
-				<span onClick={() =>{toast(`${correctAnswer}`)}}> <FontAwesomeIcon icon={faEye} /></span>
-				
-			</h2>
-			<div className="d-flex  gap-5">
+			<div className="d-flex justify-content-between">
+				<h2>{question}</h2>
+				<h2>
+					<span
+						onClick={() => {
+							toast(`${correctAnswer}`);
+						}}
+					>
+						{' '}
+						<FontAwesomeIcon icon={faEye} />
+					</span>
+				</h2>
+			</div>
+			<div className="d-md-flex  gap-5">
 				<div className="col gap-4">
 					<div className="p-3 bg-info rounded my-4">
 						<label
