@@ -35,7 +35,7 @@ const Question = ({ data, all }) => {
 				<div className="col gap-4">
 					<div className="p-3 bg-info rounded my-4">
 						<label
-							className="d-flex justify-content-center gap-1 fs-6 ms-2"
+							className="d-flex justify-content-start gap-1 align-items-center fs-5 ms-2"
 							for={options[0]}
 						>
 							<input
@@ -63,7 +63,7 @@ const Question = ({ data, all }) => {
 					<div className="p-3 bg-info rounded my-4">
 						<div>
 							<label
-								className="d-flex justify-content-center gap-1 fs-6 ms-2"
+								className="d-flex justify-content-start gap-1 align-items-center fs-5 ms-2"
 								for={options[1]}
 							>
 								<input
@@ -81,7 +81,7 @@ const Question = ({ data, all }) => {
 				<div className="col gap-4">
 					<div className="p-3 bg-info rounded my-4">
 						<label
-							className="d-flex justify-content-center gap-1 fs-6 ms-2"
+							className="d-flex justify-content-start gap-1 align-items-center fs-5 ms-2"
 							for={options[2]}
 						>
 							<input
@@ -97,7 +97,7 @@ const Question = ({ data, all }) => {
 					<div className="p-3 bg-info rounded ">
 						<div>
 							<label
-								className="d-flex justify-content-center gap-1 fs-6 ms-2"
+								className="d-flex justify-content-start gap-1 align-items-center fs-5 ms-2"
 								for={options[3]}
 							>
 								<input
