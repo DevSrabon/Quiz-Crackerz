@@ -1,6 +1,12 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { BarChart, Bar, Tooltip, XAxis, YAxis } from 'recharts';
+import {
+	BarChart,
+	Bar,
+	Tooltip,
+	XAxis,
+	YAxis,
+} from 'recharts';
 
 
 const Statistics = () => {
@@ -14,6 +20,7 @@ const Statistics = () => {
 				<YAxis />
 				<Tooltip />
 			</BarChart>
+			
 		</div>
 	);
 };
